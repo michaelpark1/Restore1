@@ -11,10 +11,12 @@ import { router } from './app/router/route';
 import { StoreProvider } from './app/context/StoreContext';
 import { Provider } from 'react-redux';
 import { store } from './app/store/configureStore';
+import { fetchProductsAsync } from './features/catalog/catalogSlice';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
